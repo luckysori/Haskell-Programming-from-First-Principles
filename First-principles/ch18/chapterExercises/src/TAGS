@@ -1,0 +1,11 @@
+
+c:/Projects/Haskell/First-principles/ch18/chapterExercises/src/monadInstances.hs,235
+data Nope Nope2,3
+instance Monad Monad Nope4,5
+  return return5,6
+  (>(>>=)6,7
+instance Arbitrary Arbitrary (Nope a)8,9
+  arbitrary arbitrary9,10
+instance Eq Eq a => EqProp (Nope a)11,12
+  (=(=-=)12,13
+main main14,15

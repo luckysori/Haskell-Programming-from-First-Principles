@@ -1,0 +1,16 @@
+Configuring ansi-terminal-0.8.0.4...
+Building ansi-terminal-0.8.0.4...
+Preprocessing library ansi-terminal-0.8.0.4...
+[ 1 of 10] Compiling System.Win32.Compat ( src\System\Win32\Compat.hs, .stack-work\dist\ca59d0ab\build\System\Win32\Compat.o )
+[ 2 of 10] Compiling System.Console.ANSI.Windows.Foreign ( src\System\Console\ANSI\Windows\Foreign.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Foreign.o )
+[ 3 of 10] Compiling System.Console.ANSI.Windows.Detect ( src\System\Console\ANSI\Windows\Detect.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Detect.o )
+[ 4 of 10] Compiling System.Console.ANSI.Types ( src\System\Console\ANSI\Types.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Types.o )
+[ 5 of 10] Compiling System.Console.ANSI.Windows.Emulator.Codes ( src\System\Console\ANSI\Windows\Emulator\Codes.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Emulator\Codes.o )
+[ 6 of 10] Compiling System.Console.ANSI.Codes ( src\System\Console\ANSI\Codes.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Codes.o )
+[ 7 of 10] Compiling System.Console.ANSI.Unix ( src\System\Console\ANSI\Unix.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Unix.o )
+[ 8 of 10] Compiling System.Console.ANSI.Windows.Emulator ( src\System\Console\ANSI\Windows\Emulator.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Emulator.o )
+[ 9 of 10] Compiling System.Console.ANSI.Windows ( src\System\Console\ANSI\Windows.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows.o )
+[10 of 10] Compiling System.Console.ANSI ( src\System\Console\ANSI.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI.o )
+Installing library in
+C:\Projects\Haskell\First-principles\ch19\shortUrl\.stack-work\install\6db3355d\lib\x86_64-windows-ghc-8.0.2\ansi-terminal-0.8.0.4-8q4o8UwD6sO3jQwHPHf7u
+Registering ansi-terminal-0.8.0.4...

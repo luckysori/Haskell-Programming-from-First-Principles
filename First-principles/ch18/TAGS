@@ -1,0 +1,32 @@
+
+c:/Projects/Haskell/First-principles/ch18/maybeMonad.hs,302
+data Cow Cow0,1
+data Cow = Cow Cow0,1
+     name name1,2
+   , age age2,3
+   , weight weight3,4
+noEmpty noEmpty6,7
+noNegative noNegative10,11
+weightCheck weightCheck15,16
+mkSphericalCow mkSphericalCow23,24
+mkSphericalCow' mkSphericalCow'37,38
+mkSphericalCow'' mkSphericalCow''44,45
+
+c:/Projects/Haskell/First-principles/ch18/listMonad.hs,33
+twiceWhenEven twiceWhenEven0,1
+
+c:/Projects/Haskell/First-principles/ch18/eitherMonad.hs,303
+data Sum Sum0,1
+data Sum a b = First First0,1
+data Sum a b = First a | Second Second0,1
+instance Functor Functor (Sum a)2,3
+  fmap fmap3,4
+instance Applicative Applicative (Sum a)6,7
+  pure pure7,8
+  (<(<*>)8,9
+instance Monad Monad (Sum a)12,13
+  return return13,14
+  (>(>>=)14,15
+
+c:/Projects/Haskell/First-principles/ch18/bind.hs,15
+bind bind2,3

@@ -1,0 +1,78 @@
+
+c:/Projects/Haskell/First-principles/ch18/chapterExercises/src\MonadInstances.hs,2061
+module MonadInstances MonadInstances0,1
+data Nope Nope8,9
+data Nope a = NopeDotJpg NopeDotJpg8,9
+instance Functor Functor Nope10,11
+  fmap fmap11,12
+instance Applicative Applicative Nope13,14
+  pure pure14,15
+  (<(<*>)15,16
+instance Monad Monad Nope17,18
+  return return18,19
+  (>(>>=)19,20
+instance Arbitrary Arbitrary (Nope a)21,22
+  arbitrary arbitrary22,23
+instance Eq Eq a => EqProp (Nope a)24,25
+  (=(=-=)25,26
+data PhhhbbtttEither PhhhbbtttEither29,30
+data PhhhbbtttEither b a = Left' Left'29,30
+data PhhhbbtttEither b a = Left' a | Right' Right'29,30
+instance Functor Functor (PhhhbbtttEither b)32,33
+  fmap fmap33,34
+instance Applicative Applicative (PhhhbbtttEither b)36,37
+  pure pure37,38
+  (<(<*>)38,39
+instance Monad Monad (PhhhbbtttEither b)42,43
+  return return43,44
+  (>(>>=)44,45
+instance (A(Arbitrary a, Arbitrary b) => Arbitrary (PhhhbbtttEither b a)47,48
+  arbitrary arbitrary49,50
+instance (E(Eq a, Eq b) => EqProp (PhhhbbtttEither b a)54,55
+  (=(=-=)55,56
+newtype Identity Identity59,60
+instance Functor Functor Identity62,63
+  fmap fmap63,64
+instance Applicative Applicative Identity65,66
+  pure pure66,67
+  (<(<*>)67,68
+instance Monad Monad Identity69,70
+  return return70,71
+  (>(>>=)71,72
+instance Arbitrary Arbitrary a => Arbitrary (Identity a)73,74
+  arbitrary arbitrary74,75
+instance (E(Eq a) => EqProp (Identity a)78,79
+  (=(=-=)79,80
+data List List83,84
+data List a = Nil Nil83,84
+data List a = Nil | Cons Cons83,84
+instance Functor Functor List85,86
+  fmap fmap86,87
+append append89,90
+fold fold94,95
+concat' concat'98,99
+flatMap flatMap101,102
+instance Applicative Applicative List106,107
+  pure pure107,108
+  (<(<*>)108,109
+instance Monad Monad List112,113
+  return return113,114
+  (>(>>=)114,115
+arbitraryList arbitraryList116,117
+instance Arbitrary Arbitrary a => Arbitrary (List a)122,123
+  arbitrary arbitrary123,124
+instance Eq Eq a => EqProp (List a)125,126
+  (=(=-=)126,127
+main main128,129
+
+c:/Projects/Haskell/First-principles/ch18/chapterExercises/src\MonadFunctions.hs,128
+module MonadFunctions MonadFunctions0,1
+j j6,7
+l1 l111,12
+l2 l216,17
+a a21,22
+meh meh26,27
+flipType flipType32,33
+
+c:/Projects/Haskell/First-principles/ch18/chapterExercises/Setup.hs,15
+main main1,2

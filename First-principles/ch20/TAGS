@@ -1,0 +1,35 @@
+
+c:/Projects/Haskell/First-principles/ch20/libraryFunctions.hs,215
+sum' sum'3,4
+product' product'6,7
+elem' elem'9,10
+minimum' minimum'12,13
+maximum' maximum'17,18
+null' null'22,23
+length' length'25,26
+toList' toList'28,29
+fold' fold'31,32
+foldMap' foldMap'34,35
+
+c:/Projects/Haskell/First-principles/ch20/chapterExercises.hs,671
+data Constant Constant2,3
+data Constant a b = Constant Constant2,3
+instance Foldable Foldable (Constant a)4,5
+  foldMap foldMap5,6
+data Two Two7,8
+data Two a b = Two Two7,8
+instance Foldable Foldable (Two a)9,10
+  foldMap foldMap10,11
+data Three Three12,13
+data Three a b c = Three Three12,13
+instance Foldable Foldable (Three a b)14,15
+  foldMap foldMap15,16
+data Three' Three'17,18
+data Three' a b = Three' Three'17,18
+instance Foldable Foldable (Three' a)19,20
+  foldMap foldMap20,21
+data Four' Four'22,23
+data Four' a b = Four' Four'22,23
+instance Foldable Foldable (Four' a)24,25
+  foldMap foldMap25,26
+filterF filterF28,29

@@ -1,0 +1,24 @@
+Configuring simple-sendfile-0.2.27...
+Building simple-sendfile-0.2.27...
+Preprocessing library simple-sendfile-0.2.27...
+[1 of 3] Compiling Network.Sendfile.Types ( Network\Sendfile\Types.hs, .stack-work\dist\ca59d0ab\build\Network\Sendfile\Types.o )
+[2 of 3] Compiling Network.Sendfile.Fallback ( Network\Sendfile\Fallback.hs, .stack-work\dist\ca59d0ab\build\Network\Sendfile\Fallback.o )
+
+Network\Sendfile\Fallback.hs:25:36: warning: [-Wdeprecations]
+    In the use of `$$'
+    (imported from Data.Conduit, but defined in conduit-1.3.0.2:Data.Conduit.Internal.Conduit):
+    Deprecated: "Use runConduit and .|"
+
+Network\Sendfile\Fallback.hs:27:66: warning: [-Wdeprecations]
+    In the use of `$$'
+    (imported from Data.Conduit, but defined in conduit-1.3.0.2:Data.Conduit.Internal.Conduit):
+    Deprecated: "Use runConduit and .|"
+
+Network\Sendfile\Fallback.hs:30:47: warning: [-Wdeprecations]
+    In the use of type constructor or class `Sink'
+    (imported from Data.Conduit, but defined in conduit-1.3.0.2:Data.Conduit.Internal.Conduit):
+    Deprecated: "Use ConduitT directly"
+[3 of 3] Compiling Network.Sendfile ( Network\Sendfile.hs, .stack-work\dist\ca59d0ab\build\Network\Sendfile.o )
+Installing library in
+C:\Projects\Haskell\First-principles\ch19\shortUrl\.stack-work\install\6db3355d\lib\x86_64-windows-ghc-8.0.2\simple-sendfile-0.2.27-CXF7bSD4pL97ZcXUs5DhnF
+Registering simple-sendfile-0.2.27...

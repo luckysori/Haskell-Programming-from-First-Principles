@@ -1,0 +1,19 @@
+Configuring cereal-0.5.5.0...
+Building cereal-0.5.5.0...
+Preprocessing library cereal-0.5.5.0...
+[1 of 4] Compiling Data.Serialize.Put ( src\Data\Serialize\Put.hs, .stack-work\dist\ca59d0ab\build\Data\Serialize\Put.o )
+
+src\Data\Serialize\Put.hs:103:1: warning: [-Wunused-imports]
+    The qualified import of `Data.Monoid' is redundant
+      except perhaps to import instances from `Data.Monoid'
+    To import instances alone, use: import Data.Monoid()
+[2 of 4] Compiling Data.Serialize.Get ( src\Data\Serialize\Get.hs, .stack-work\dist\ca59d0ab\build\Data\Serialize\Get.o )
+[3 of 4] Compiling Data.Serialize.IEEE754 ( src\Data\Serialize\IEEE754.hs, .stack-work\dist\ca59d0ab\build\Data\Serialize\IEEE754.o )
+[4 of 4] Compiling Data.Serialize   ( src\Data\Serialize.hs, .stack-work\dist\ca59d0ab\build\Data\Serialize.o )
+
+src\Data\Serialize.hs:290:9: warning: [-Wincomplete-patterns]
+    Pattern match(es) are non-exhaustive
+    In an equation for `findNr': Patterns not matched: _ _
+Installing library in
+C:\Projects\Haskell\First-principles\ch19\shortUrl\.stack-work\install\6db3355d\lib\x86_64-windows-ghc-8.0.2\cereal-0.5.5.0-4mI7cH76utd5msQR92JWfO
+Registering cereal-0.5.5.0...

@@ -1,0 +1,542 @@
+[1 of 2] Compiling Main             ( C:\Users\Lucas\AppData\Local\Temp\stack1268\network-2.6.3.5\Setup.hs, C:\Users\Lucas\AppData\Local\Temp\stack1268\network-2.6.3.5\.stack-work\dist\5c8418a7\setup\Main.o )
+[2 of 2] Compiling StackSetupShim   ( C:\sr\setup-exe-src\setup-shim-Z6RU0evB.hs, C:\Users\Lucas\AppData\Local\Temp\stack1268\network-2.6.3.5\.stack-work\dist\5c8418a7\setup\StackSetupShim.o )
+Linking C:\Users\Lucas\AppData\Local\Temp\stack1268\network-2.6.3.5\.stack-work\dist\5c8418a7\setup\setup.exe ...
+Configuring network-2.6.3.5...
+configure: WARNING: unrecognized options: --with-compiler
+checking build system type... x86_64-pc-mingw64
+checking host system type... x86_64-pc-mingw64
+checking for gcc... C:\Users\Lucas\AppData\Local\Programs\stack\X86_64~1\GHC-82~1.2\mingw\bin\gcc.exe
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether C:\Users\Lucas\AppData\Local\Programs\stack\X86_64~1\GHC-82~1.2\mingw\bin\gcc.exe accepts -g... yes
+checking for C:\Users\Lucas\AppData\Local\Programs\stack\X86_64~1\GHC-82~1.2\mingw\bin\gcc.exe option to accept ISO C89... none needed
+checking for an ANSI C-conforming const... yes
+checking how to run the C preprocessor... C:\Users\Lucas\AppData\Local\Programs\stack\X86_64~1\GHC-82~1.2\mingw\bin\gcc.exe -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking winsock2.h usability... yes
+checking winsock2.h presence... yes
+checking for winsock2.h... yes
+checking ws2tcpip.h usability... yes
+checking ws2tcpip.h presence... yes
+checking for ws2tcpip.h... yes
+checking arpa/inet.h usability... no
+checking arpa/inet.h presence... no
+checking for arpa/inet.h... no
+checking netdb.h usability... no
+checking netdb.h presence... no
+checking for netdb.h... no
+checking netinet/in.h usability... no
+checking netinet/in.h presence... no
+checking for netinet/in.h... no
+checking netinet/tcp.h usability... no
+checking netinet/tcp.h presence... no
+checking for netinet/tcp.h... no
+checking sys/socket.h usability... no
+checking sys/socket.h presence... no
+checking for sys/socket.h... no
+checking sys/uio.h usability... no
+checking sys/uio.h presence... no
+checking for sys/uio.h... no
+checking sys/un.h usability... no
+checking sys/un.h presence... no
+checking for sys/un.h... no
+checking linux/can.h usability... no
+checking linux/can.h presence... no
+checking for linux/can.h... no
+checking linux/tcp.h usability... no
+checking linux/tcp.h presence... no
+checking for linux/tcp.h... no
+checking net/if.h usability... no
+checking net/if.h presence... no
+checking for net/if.h... no
+checking for readlink... no
+checking for symlink... no
+checking for if_nametoindex... no
+checking for struct msghdr.msg_control... no
+checking for struct msghdr.msg_accrights... no
+checking for struct sockaddr.sa_len... no
+checking for in_addr_t in netinet/in.h... no
+checking for SO_PEERCRED and struct ucred in sys/socket.h... no
+checking for getpeereid in unistd.h... checking for getpeereid... no
+checking for _head_libws2_32_a in -lws2_32... no
+checking for getaddrinfo... yes
+checking for gai_strerror... no
+checking whether AI_ADDRCONFIG is declared... no
+checking whether AI_ALL is declared... no
+checking whether AI_NUMERICSERV is declared... no
+checking whether AI_V4MAPPED is declared... no
+checking whether IPV6_V6ONLY is declared... yes
+checking whether IPPROTO_IP is declared... yes
+checking whether IPPROTO_TCP is declared... yes
+checking whether IPPROTO_IPV6 is declared... yes
+checking for sendfile in sys/sendfile.h... no
+checking for sendfile in sys/socket.h... no
+checking for gethostent... no
+checking for accept4... no
+configure: creating ./config.status
+config.status: creating network.buildinfo
+config.status: creating include/HsNetworkConfig.h
+configure: WARNING: unrecognized options: --with-compiler
+Preprocessing library for network-2.6.3.5..
+Building library for network-2.6.3.5..
+[1 of 9] Compiling Network.Socket.ByteString.Internal ( Network\Socket\ByteString\Internal.hs, .stack-work\dist\5c8418a7\build\Network\Socket\ByteString\Internal.o )
+[2 of 9] Compiling Network.Socket.Types ( .stack-work\dist\5c8418a7\build\Network\Socket\Types.hs, .stack-work\dist\5c8418a7\build\Network\Socket\Types.o )
+
+Network\Socket\Types.hsc:71:1: warning: [-Wunused-imports]
+    The import of `Foreign.Marshal.Array' is redundant
+      except perhaps to import instances from `Foreign.Marshal.Array'
+    To import instances alone, use: import Foreign.Marshal.Array()
+   |
+71 | import Foreign.Marshal.Array
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket\Types.hsc:764:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "ntohs" ntohs :: Word16 -> Word16
+    |
+764 | foreign import CALLCONV unsafe "ntohs" ntohs :: Word16 -> Word16
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket\Types.hsc:765:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "htons" htons :: Word16 -> Word16
+    |
+765 | foreign import CALLCONV unsafe "htons" htons :: Word16 -> Word16
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket\Types.hsc:766:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "ntohl" ntohl :: Word32 -> Word32
+    |
+766 | foreign import CALLCONV unsafe "ntohl" ntohl :: Word32 -> Word32
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket\Types.hsc:767:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "htonl" htonl :: Word32 -> Word32
+    |
+767 | foreign import CALLCONV unsafe "htonl" htonl :: Word32 -> Word32
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3 of 9] Compiling Network.Socket.Internal ( .stack-work\dist\5c8418a7\build\Network\Socket\Internal.hs, .stack-work\dist\5c8418a7\build\Network\Socket\Internal.o )
+
+Network\Socket\Internal.hsc:72:1: warning: [-Wunused-imports]
+    The import of `Foreign.C.Error' is redundant
+      except perhaps to import instances from `Foreign.C.Error'
+    To import instances alone, use: import Foreign.C.Error()
+   |
+72 | import Foreign.C.Error (throwErrno, throwErrnoIfMinus1Retry,
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket\Internal.hsc:179:3: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type `a'
+    Suppress this warning by saying
+      `_ <- throwSocketErrorIfMinus1Retry name act'
+    |
+179 |   throwSocketErrorIfMinus1Retry name act
+    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket\Internal.hsc:191:9: warning: [-Wname-shadowing]
+    This binding for `r' shadows the existing binding
+      bound at Network\Socket\Internal.hsc:184:3
+    |
+191 |         r <- act
+    |         ^
+
+Network\Socket\Internal.hsc:206:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "WSAGetLastError" c_getLastError
+          :: IO CInt
+    |
+206 | foreign import CALLCONV unsafe "WSAGetLastError"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+[4 of 9] Compiling Network.Socket   ( .stack-work\dist\5c8418a7\build\Network\Socket.hs, .stack-work\dist\5c8418a7\build\Network\Socket.o )
+
+Network\Socket.hsc:261:1: warning: [-Wunused-imports]
+    The import of `Foreign.C.Error' is redundant
+      except perhaps to import instances from `Foreign.C.Error'
+    To import instances alone, use: import Foreign.C.Error()
+    |
+261 | import Foreign.C.Error
+    | ^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket.hsc:263:1: warning: [-Wunused-imports]
+    The import of `CUInt' from module `Foreign.C.Types' is redundant
+    |
+263 | import Foreign.C.Types (CUInt, CChar)
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket.hsc:266:1: warning: [-Wunused-imports]
+    The import of `Foreign.Marshal.Array' is redundant
+      except perhaps to import instances from `Foreign.Marshal.Array'
+    To import instances alone, use: import Foreign.Marshal.Array()
+    |
+266 | import Foreign.Marshal.Array ( peekArray )
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket.hsc:333:1: warning: [-Wmissing-signatures]
+    Top-level binding with no type signature: socket2FD :: Socket -> FD
+    |
+333 | socket2FD  (MkSocket fd _ _ _ _) =
+    | ^^^^^^^^^
+
+Network\Socket.hsc:531:9: warning: [-Wunused-local-binds]
+    Defined but not used: `connectBlocked'
+    |
+531 |         connectBlocked = do
+    |         ^^^^^^^^^^^^^^
+
+Network\Socket.hsc:581:8: warning: [-Wunused-matches]
+    Defined but not used: `sock'
+    |
+581 | accept sock@(MkSocket s family stype protocol status) = withMVar status $ \currentStatus -> do
+    |        ^^^^
+
+Network\Socket.hsc:750:24: warning: [-Wunused-matches]
+    Defined but not used: `s'
+    |
+750 | sendBuf sock@(MkSocket s _family _stype _protocol _status) str len = do
+    |                        ^
+
+Network\Socket.hsc:808:24: warning: [-Wunused-matches]
+    Defined but not used: `s'
+    |
+808 | recvBuf sock@(MkSocket s _family _stype _protocol _status) ptr nbytes
+    |                        ^
+
+Network\Socket.hsc:1129:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "htonl" htonl :: Word32 -> Word32
+     |
+1129 | foreign import CALLCONV unsafe "htonl" htonl :: Word32 -> Word32
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket.hsc:1131:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "ntohl" ntohl :: Word32 -> Word32
+     |
+1131 | foreign import CALLCONV unsafe "ntohl" ntohl :: Word32 -> Word32
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socket.hsc:1676:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "inet_addr" c_inet_addr
+          :: Ptr CChar -> IO HostAddress
+     |
+1676 | foreign import CALLCONV unsafe "inet_addr"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1679:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "shutdown" c_shutdown
+          :: CInt -> CInt -> IO CInt
+     |
+1679 | foreign import CALLCONV unsafe "shutdown"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1689:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "closesocket" c_close
+          :: CInt -> IO CInt
+     |
+1689 | foreign import stdcall unsafe "closesocket"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1693:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "socket" c_socket
+          :: CInt -> CInt -> CInt -> IO CInt
+     |
+1693 | foreign import CALLCONV unsafe "socket"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1695:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "bind" c_bind
+          :: CInt -> Ptr SockAddr -> CInt -> IO CInt
+     |
+1695 | foreign import CALLCONV unsafe "bind"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1697:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "connect" c_connect
+          :: CInt -> Ptr SockAddr -> CInt -> IO CInt
+     |
+1697 | foreign import CALLCONV SAFE_ON_WIN "connect"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1703:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "accept" c_accept
+          :: CInt -> Ptr SockAddr -> Ptr CInt -> IO CInt
+     |
+1703 | foreign import CALLCONV unsafe "accept"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1703:1: warning: [-Wunused-top-binds]
+    Defined but not used: `c_accept'
+     |
+1703 | foreign import CALLCONV unsafe "accept"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1706:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "listen" c_listen
+          :: CInt -> CInt -> IO CInt
+     |
+1706 | foreign import CALLCONV unsafe "listen"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1710:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "accept" c_accept_safe
+          :: CInt -> Ptr SockAddr -> Ptr CInt -> IO CInt
+     |
+1710 | foreign import CALLCONV safe "accept"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1716:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "send" c_send
+          :: CInt -> Ptr a -> CSize -> CInt -> IO CInt
+     |
+1716 | foreign import CALLCONV unsafe "send"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1716:1: warning: [-Wunused-top-binds]
+    Defined but not used: `c_send'
+     |
+1716 | foreign import CALLCONV unsafe "send"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1718:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "sendto" c_sendto
+          :: CInt
+             -> Ptr a -> CSize -> CInt -> Ptr SockAddr -> CInt -> IO CInt
+     |
+1718 | foreign import CALLCONV SAFE_ON_WIN "sendto"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1720:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "recv" c_recv
+          :: CInt -> Ptr CChar -> CSize -> CInt -> IO CInt
+     |
+1720 | foreign import CALLCONV unsafe "recv"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1720:1: warning: [-Wunused-top-binds]
+    Defined but not used: `c_recv'
+     |
+1720 | foreign import CALLCONV unsafe "recv"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1722:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "recvfrom" c_recvfrom
+          :: CInt
+             -> Ptr a -> CSize -> CInt -> Ptr SockAddr -> Ptr CInt -> IO CInt
+     |
+1722 | foreign import CALLCONV SAFE_ON_WIN "recvfrom"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1724:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getpeername" c_getpeername
+          :: CInt -> Ptr SockAddr -> Ptr CInt -> IO CInt
+     |
+1724 | foreign import CALLCONV unsafe "getpeername"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1726:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getsockname" c_getsockname
+          :: CInt -> Ptr SockAddr -> Ptr CInt -> IO CInt
+     |
+1726 | foreign import CALLCONV unsafe "getsockname"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1729:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getsockopt" c_getsockopt
+          :: CInt -> CInt -> CInt -> Ptr CInt -> Ptr CInt -> IO CInt
+     |
+1729 | foreign import CALLCONV unsafe "getsockopt"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\Socket.hsc:1731:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "setsockopt" c_setsockopt
+          :: CInt -> CInt -> CInt -> Ptr CInt -> CInt -> IO CInt
+     |
+1731 | foreign import CALLCONV unsafe "setsockopt"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+[5 of 9] Compiling Network.Socket.ByteString ( .stack-work\dist\5c8418a7\build\Network\Socket\ByteString.hs, .stack-work\dist\5c8418a7\build\Network\Socket\ByteString.o )
+[6 of 9] Compiling Network.Socket.ByteString.Lazy.Windows ( Network\Socket\ByteString\Lazy\Windows.hs, .stack-work\dist\5c8418a7\build\Network\Socket\ByteString\Lazy\Windows.o )
+[7 of 9] Compiling Network.Socket.ByteString.Lazy ( Network\Socket\ByteString\Lazy.hs, .stack-work\dist\5c8418a7\build\Network\Socket\ByteString\Lazy.o )
+[8 of 9] Compiling Network.BSD      ( .stack-work\dist\5c8418a7\build\Network\BSD.hs, .stack-work\dist\5c8418a7\build\Network\BSD.o )
+
+Network\BSD.hsc:105:1: warning: [-Wunused-imports]
+    The import of `CUInt' from module `Foreign.C.Types' is redundant
+    |
+105 | import Foreign.C.Types ( CInt(..), CUInt(..), CULong(..), CSize(..) )
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\BSD.hsc:109:1: warning: [-Wunused-imports]
+    The import of `fromBool'
+    from module `Foreign.Marshal.Utils' is redundant
+    |
+109 | import Foreign.Marshal.Utils (with, fromBool)
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\BSD.hsc:185:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getservbyname" c_getservbyname
+          :: CString -> CString -> IO (Ptr ServiceEntry)
+    |
+185 | foreign import CALLCONV unsafe "getservbyname"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:196:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getservbyport" c_getservbyport
+          :: CInt -> CString -> IO (Ptr ServiceEntry)
+    |
+196 | foreign import CALLCONV unsafe "getservbyport"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:283:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getprotobyname" c_getprotobyname
+          :: CString -> IO (Ptr ProtocolEntry)
+    |
+283 | foreign import  CALLCONV unsafe  "getprotobyname"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:293:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "getprotobynumber" c_getprotobynumber
+          :: CInt -> IO (Ptr ProtocolEntry)
+    |
+293 | foreign import CALLCONV unsafe  "getprotobynumber"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:384:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "gethostbyname" c_gethostbyname
+          :: CString -> IO (Ptr HostEntry)
+    |
+384 | foreign import CALLCONV safe "gethostbyname"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:398:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "gethostbyaddr" c_gethostbyaddr
+          :: Ptr HostAddress -> CInt -> CInt -> IO (Ptr HostEntry)
+    |
+398 | foreign import CALLCONV safe "gethostbyaddr"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:556:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "gethostname" c_gethostname
+          :: CString -> CSize -> IO CInt
+    |
+556 | foreign import CALLCONV unsafe "gethostname"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Network\BSD.hsc:565:1: warning: [-Wunused-top-binds]
+    Defined but not used: `getEntries'
+    |
+565 | getEntries getOne atEnd = loop
+    | ^^^^^^^^^^
+[9 of 9] Compiling Network          ( Network.hs, .stack-work\dist\5c8418a7\build\Network.o )
+Installing library in C:\sr\snapshots\f816a61f\lib\x86_64-windows-ghc-8.2.2\network-2.6.3.5-BOrB8qFypWk9xQFETNzcpy
+Registering library for network-2.6.3.5..
