@@ -1,76 +1,0 @@
-
-c:/Projects/Haskell/First-principles/ch22/warmingUp.hs,141
-cap cap2,3
-rev rev5,6
-composed composed8,9
-fmapped fmapped11,12
-tupled tupled14,15
-tupled' tupled'17,18
-tupled'' tupled''23,24
-
-c:/Projects/Haskell/First-principles/ch22/readingComp.hs,275
-myLiftA2 myLiftA22,3
-newtype Reader Reader7,8
-  Reader { runReader runReader8,9
-asks asks10,11
-instance Functor Functor (Reader r)13,14
-  fmap fmap14,15
-instance Applicative Applicative (Reader r)16,17
-  pure pure17,18
-  (<(<*>)20,21
-  (R(Readerrab)23,24
-
-c:/Projects/Haskell/First-principles/ch22/readerMonad.hs,329
-newtype Reader Reader2,3
-  Reader { runReader runReader3,4
-instance Functor Functor (Reader r)5,6
-  fmap fmap6,7
-instance Applicative Applicative (Reader r)8,9
-  pure pure9,10
-  (<(<*>)12,13
-  (R(Readerrab)15,16
-instance Monad Monad (Reader r)18,19
-  return return19,20
-  (>(>>=)21,22
-  (R(Readerra)24,25
-
-c:/Projects/Haskell/First-principles/ch22/reader\src\Main.hs,37
-module Main Main0,1
-main main4,5
-
-c:/Projects/Haskell/First-principles/ch22/reader\Setup.hs,15
-main main1,2
-
-c:/Projects/Haskell/First-principles/ch22/newBeginning.hs,148
-boop boop2,3
-doop doop3,4
-bip bip5,6
-bloop bloop8,9
-bbop bbop11,12
-duwop duwop14,15
-boopDoop boopDoop17,18
-boopDoop' boopDoop'23,24
-
-c:/Projects/Haskell/First-principles/ch22/functionApp.hs,433
-newtype HumanName HumanName2,3
-newtype DogName DogName6,7
-newtype Address Address10,11
-data Person Person14,15
-  Person Person15,16
-    humanName humanName16,17
-  , dogName dogName17,18
-  , address address18,19
-data Dog Dog21,22
-  Dog Dog22,23
-    dogsName dogsName23,24
-  , dogsAddress dogsAddress24,25
-pers pers27,28
-chris chris33,34
-getDog getDog38,39
-getDogR getDogR42,43
-getDogR' getDogR'46,47
-
-c:/Projects/Haskell/First-principles/ch22/ask.hs,76
-newtype Reader Reader0,1
-  Reader { runReader runReader1,2
-ask ask3,4

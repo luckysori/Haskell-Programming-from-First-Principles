@@ -1,18 +1,0 @@
-
-c:/Projects/Haskell/First-principles/ch19/shortUrl/src\Main.hs,352
-module Main Main2,3
-alphaNum alphaNum15,16
-randomElement randomElement18,19
-shortyGen shortyGen29,30
-shortyGenFunc shortyGenFunc39,40
-saveURI saveURI54,55
-getURI getURI61,62
-linkShorty linkShorty68,69
-shortyCreated shortyCreated75,76
-shortyAintUri shortyAintUri81,82
-shortyFound shortyFound87,88
-app app91,92
-main main117,118
-
-c:/Projects/Haskell/First-principles/ch19/shortUrl/Setup.hs,15
-main main1,2

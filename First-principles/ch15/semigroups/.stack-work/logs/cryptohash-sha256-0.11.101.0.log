@@ -1,7 +1,0 @@
-Configuring cryptohash-sha256-0.11.101.0...
-Preprocessing library for cryptohash-sha256-0.11.101.0..
-Building library for cryptohash-sha256-0.11.101.0..
-[1 of 2] Compiling Crypto.Hash.SHA256.FFI ( src\Crypto\Hash\SHA256\FFI.hs, .stack-work\dist\5c8418a7\build\Crypto\Hash\SHA256\FFI.o )
-[2 of 2] Compiling Crypto.Hash.SHA256 ( src\Crypto\Hash\SHA256.hs, .stack-work\dist\5c8418a7\build\Crypto\Hash\SHA256.o )
-Installing library in C:\sr\snapshots\f816a61f\lib\x86_64-windows-ghc-8.2.2\cryptohash-sha256-0.11.101.0-2y5kOPF2abcAQTysw8Z7cK
-Registering library for cryptohash-sha256-0.11.101.0..

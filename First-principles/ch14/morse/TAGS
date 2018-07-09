@@ -1,37 +1,0 @@
-
-c:/Projects/Haskell/First-principles/ch14/morse/tests\tests.hs,203
-module Main Main0,1
-allowedChars allowedChars6,7
-allowedMorse allowedMorse9,10
-charGen charGen12,13
-morseGen morseGen15,16
-prop_thereAndBackAgain prop_thereAndBackAgain18,19
-main main24,25
-
-c:/Projects/Haskell/First-principles/ch14/morse/test\Spec.hs,15
-main main0,1
-
-c:/Projects/Haskell/First-principles/ch14/morse/src\Morse.hs,191
-type Morse Morse11,12
-letterToMorse letterToMorse13,14
-morseToLetter morseToLetter53,54
-charToMorse charToMorse56,57
-stringToMorse stringToMorse59,60
-morseToChar morseToChar62,63
-
-c:/Projects/Haskell/First-principles/ch14/morse/src\Main.hs,117
-module Main Main0,1
-convertToMorse convertToMorse11,12
-convertFromMorse convertFromMorse32,33
-main main52,53
-
-c:/Projects/Haskell/First-principles/ch14/morse/src\Lib.hs,42
-module LibLib0,1
-someFunc someFunc4,5
-
-c:/Projects/Haskell/First-principles/ch14/morse/Setup.hs,15
-main main1,2
-
-c:/Projects/Haskell/First-principles/ch14/morse/app\Main.hs,37
-module Main Main0,1
-main main4,5
