@@ -1,0 +1,86 @@
+Configuring hindent-4.6.3...
+Building hindent-4.6.3...
+Preprocessing library hindent-4.6.3...
+[1 of 9] Compiling HIndent.Types    ( src\HIndent\Types.hs, .stack-work\dist\2672c1f3\build\HIndent\Types.o )
+[2 of 9] Compiling HIndent.Styles.Fundamental ( src\HIndent\Styles\Fundamental.hs, .stack-work\dist\2672c1f3\build\HIndent\Styles\Fundamental.o )
+[3 of 9] Compiling HIndent.Pretty   ( src\HIndent\Pretty.hs, .stack-work\dist\2672c1f3\build\HIndent\Pretty.o )
+[4 of 9] Compiling HIndent.Styles.Cramer ( src\HIndent\Styles\Cramer.hs, .stack-work\dist\2672c1f3\build\HIndent\Styles\Cramer.o )
+[5 of 9] Compiling HIndent.Styles.Gibiansky ( src\HIndent\Styles\Gibiansky.hs, .stack-work\dist\2672c1f3\build\HIndent\Styles\Gibiansky.o )
+[6 of 9] Compiling HIndent.Comments ( src\HIndent\Comments.hs, .stack-work\dist\2672c1f3\build\HIndent\Comments.o )
+
+src\HIndent\Comments.hs:8:1: Warning:
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+
+src\HIndent\Comments.hs:13:1: Warning:
+    The import of `Data.Traversable' is redundant
+      except perhaps to import instances from `Data.Traversable'
+    To import instances alone, use: import Data.Traversable()
+[7 of 9] Compiling HIndent.Styles.ChrisDone ( src\HIndent\Styles\ChrisDone.hs, .stack-work\dist\2672c1f3\build\HIndent\Styles\ChrisDone.o )
+
+src\HIndent\Styles\ChrisDone.hs:89:18: Warning:
+    This binding for `head' shadows the existing binding
+      imported from `Prelude' at src\HIndent\Styles\ChrisDone.hs:23:1-27
+      (and originally defined in `GHC.List')
+
+src\HIndent\Styles\ChrisDone.hs:346:9: Warning:
+    This binding for `lined' shadows the existing binding
+      imported from `HIndent.Pretty' at src\HIndent\Styles\ChrisDone.hs:10:1-21
+      (and originally defined at src\HIndent\Pretty.hs:218:1-5)
+[8 of 9] Compiling HIndent.Styles.JohanTibell ( src\HIndent\Styles\JohanTibell.hs, .stack-work\dist\2672c1f3\build\HIndent\Styles\JohanTibell.o )
+[9 of 9] Compiling HIndent          ( src\HIndent.hs, .stack-work\dist\2672c1f3\build\HIndent.o )
+
+src\HIndent.hs:37:1: Warning:
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+
+src\HIndent.hs:43:1: Warning:
+    The import of `Data.List' is redundant
+      except perhaps to import instances from `Data.List'
+    To import instances alone, use: import Data.List()
+
+src\HIndent.hs:66:11: Warning:
+    This binding for `lines' shadows the existing binding
+      imported from `Data.List' at src\HIndent.hs:42:1-26
+      (and originally defined in `base-4.8.2.0:Data.OldList')
+
+src\HIndent.hs:81:5: Warning:
+    This binding for `stripPrefix' shadows the existing binding
+      imported from `Data.List' at src\HIndent.hs:42:1-26
+      (and originally defined in `base-4.8.2.0:Data.OldList')
+
+src\HIndent.hs:109:28: Warning:
+    This binding for `x' shadows the existing binding
+      bound at src\HIndent.hs:60:22
+
+src\HIndent.hs:173:7: Warning:
+    This binding for `style' shadows the existing binding
+      bound at src\HIndent.hs:168:19
+
+src\HIndent.hs:180:23: Warning:
+    This binding for `comments' shadows the existing binding
+      bound at src\HIndent.hs:168:27
+In-place registering hindent-4.6.3...
+Preprocessing executable 'hindent' for hindent-4.6.3...
+[1 of 2] Compiling Paths_hindent    ( .stack-work\dist\2672c1f3\build\autogen\Paths_hindent.hs, .stack-work\dist\2672c1f3\build\hindent\hindent-tmp\Paths_hindent.o )
+[2 of 2] Compiling Main             ( src\main\Main.hs, .stack-work\dist\2672c1f3\build\hindent\hindent-tmp\Main.o )
+
+src\main\Main.hs:23:1: Warning:
+    The import of `GHC.Tuple' is redundant
+      except perhaps to import instances from `GHC.Tuple'
+    To import instances alone, use: import GHC.Tuple()
+Linking .stack-work\dist\2672c1f3\build\hindent\hindent.exe ...
+Preprocessing executable 'hindent-generate-tests' for hindent-4.6.3...
+[1 of 1] Compiling Main             ( src\main\TestGenerate.hs, .stack-work\dist\2672c1f3\build\hindent-generate-tests\hindent-generate-tests-tmp\Main.o )
+
+src\main\TestGenerate.hs:4:1: Warning:
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+Linking .stack-work\dist\2672c1f3\build\hindent-generate-tests\hindent-generate-tests.exe ...
+Installing library in
+C:\sr\snapshots\4a5a0f0a\lib\x86_64-windows-ghc-7.10.3\hindent-4.6.3-Dym290S5qMX5KtcYL40YyH
+Installing executable(s) in C:\sr\snapshots\4a5a0f0a\bin
+Registering hindent-4.6.3...

@@ -1,0 +1,622 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-01 14:42:28.0806967 UTC
+
+interface main:Semigroups 8022
+  interface hash: 32d8961ede5ba4ab8a62e252a97c333e
+  ABI hash: 30fb7f2d38d1e4ad040398c79263d0b4
+  export-list hash: 4ca4ce3631e7f546b9726c1c381ea304
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4f11cec455ab83aa4624b16e8fdd4d80
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Semigroups.main
+  Semigroups.semigroupAssoc
+  Semigroups.TrivAssoc
+  Semigroups.Trivial{Semigroups.Trivial}
+module dependencies:
+package dependencies: QuickCheck-2.10.1 Win32-2.5.4.1 array-0.5.2.0
+                      base-4.10.1.0* containers-0.5.10.2 deepseq-1.4.3.0
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 integer-gmp-1.0.1.0
+                      pretty-1.1.3.3 primitive-0.6.3.0 random-1.1
+                      template-haskell-2.12.0.0 tf-random-0.5 time-1.8.0.2
+                      transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.10.1:Test.QuickCheck 384b265bb43b04f88515d0030a3eea23
+import  -/  QuickCheck-2.10.1:Test.QuickCheck.Arbitrary 51fd4b6bcba53aba3b6366311b8a279d
+import  -/  QuickCheck-2.10.1:Test.QuickCheck.Test be49a7a630d6c3b9fb5263d1d7f2f4b6
+import  -/  base-4.10.1.0:Data.Semigroup bb5cd12b517774ef92378fd3003585a4
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:GHC.Show 927ef590f679632bf94869e8018e5b48
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+ad43d9782290ccb446184930ac59f5e0
+  $fArbitraryTrivial ::
+    Test.QuickCheck.Arbitrary.Arbitrary Semigroups.Trivial
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Semigroups.Trivial
+                  Semigroups.$fArbitraryTrivial1
+                    `cast`
+                  (Sym (Test.QuickCheck.Gen.N:Gen[0] <Semigroups.Trivial>_R))
+                  Semigroups.$fArbitraryTrivial_$cshrink -}
+ad43d9782290ccb446184930ac59f5e0
+  $fArbitraryTrivial1 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> Semigroups.Trivial
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                 Semigroups.Trivial) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fArbitraryTrivial_$cshrink ::
+    Semigroups.Trivial -> [Semigroups.Trivial]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Semigroups.Trivial) ->
+                 GHC.Types.[] @ Semigroups.Trivial) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fEqTrivial :: GHC.Classes.Eq Semigroups.Trivial
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Semigroups.Trivial
+                  Semigroups.$fEqTrivial_$c==
+                  Semigroups.$fEqTrivial_$c/= -}
+ad43d9782290ccb446184930ac59f5e0
+  $fEqTrivial_$c/= ::
+    Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Semigroups.Trivial) (b :: Semigroups.Trivial) ->
+                 case a of wild { Semigroups.Trivial ->
+                 case b of wild1 { Semigroups.Trivial -> GHC.Types.False } }) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fEqTrivial_$c== ::
+    Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Semigroups.Trivial) (ds1 :: Semigroups.Trivial) ->
+                 case ds of wild { Semigroups.Trivial ->
+                 case ds1 of wild1 { Semigroups.Trivial -> GHC.Types.True } }) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fSemigroupTrivial :: Data.Semigroup.Semigroup Semigroups.Trivial
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Semigroups.Trivial
+                  Semigroups.$fSemigroupTrivial_$c<>
+                  Semigroups.$fSemigroupTrivial_$csconcat
+                  Semigroups.$fSemigroupTrivial_$cstimes -}
+ad43d9782290ccb446184930ac59f5e0
+  $fSemigroupTrivial_$c<> ::
+    Semigroups.Trivial -> Semigroups.Trivial -> Semigroups.Trivial
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Semigroups.Trivial) (ds1 :: Semigroups.Trivial) ->
+                 Semigroups.Trivial) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fSemigroupTrivial_$csconcat ::
+    Data.List.NonEmpty.NonEmpty Semigroups.Trivial
+    -> Semigroups.Trivial
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(1*U(),1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.List.NonEmpty.NonEmpty Semigroups.Trivial) ->
+                 case ds of wild { Data.List.NonEmpty.:| a1 as ->
+                 case as of wild1 { [] -> a1 : c cs -> Semigroups.Trivial } }) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fSemigroupTrivial_$cstimes ::
+    GHC.Real.Integral b =>
+    b -> Semigroups.Trivial -> Semigroups.Trivial
+  {- Arity: 3,
+     Strictness: <S(S(LS(S(C(C(S))L)LLC(C(S))LLLL)L)LLLLLLLL),U(U(U(A,A,A,A,A,A,C(U)),U(U(C(C1(U)),A),A,A,1*C1(C1(U)),A,A,A,A),A),1*U(A,C(U),A,A,A,A,A,A),C(C1(U)),C(C1(U)),A,A,A,A,A)><L,U><L,1*U()> -}
+ad43d9782290ccb446184930ac59f5e0
+  $fShowTrivial :: GHC.Show.Show Semigroups.Trivial
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Semigroups.Trivial
+                  Semigroups.$fShowTrivial_$cshowsPrec
+                  Semigroups.$fShowTrivial_$cshow
+                  Semigroups.$fShowTrivial_$cshowList -}
+ad43d9782290ccb446184930ac59f5e0
+  $fShowTrivial1 :: Semigroups.Trivial -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*H><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Semigroups.Trivial) (eta :: GHC.Base.String) ->
+                 case ds of wild { Semigroups.Trivial ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Semigroups.$fShowTrivial2)
+                   eta }) -}
+3ac9bdcdf345f9a467a5ab06685214e7
+  $fShowTrivial2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Semigroups.$fShowTrivial3) -}
+9f85b89cd240c5dedc3ac21915cb329e
+  $fShowTrivial3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Trivial"#) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fShowTrivial_$cshow :: Semigroups.Trivial -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Semigroups.Trivial) ->
+                 case x of wild { Semigroups.Trivial ->
+                 Semigroups.$fShowTrivial2 }) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fShowTrivial_$cshowList :: [Semigroups.Trivial] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Semigroups.Trivial
+                   Semigroups.$fShowTrivial1) -}
+ad43d9782290ccb446184930ac59f5e0
+  $fShowTrivial_$cshowsPrec ::
+    GHC.Types.Int -> Semigroups.Trivial -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Semigroups.Trivial)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild { Semigroups.Trivial ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Semigroups.$fShowTrivial2)
+                   eta }) -}
+89479c1df44263c3c1a69f47f854af7b
+  $s$fTestable(->)3 ::
+    (Semigroups.Trivial -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3,
+     Strictness: <L,C(U)><S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Semigroups.Trivial -> GHC.Types.Bool)
+                   (w1 :: Test.QuickCheck.Random.QCGen)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1
+                        `cast`
+                      (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Semigroups.$w$dTestable w ww1 ww2 ww3 ww4 w2 }) -}
+325ed2e4e4cca138a822662558e893f5
+  $s$fTestable(->)5 ::
+    (Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3,
+     Strictness: <L,C(U)><S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Semigroups.Trivial
+                         -> Semigroups.Trivial -> GHC.Types.Bool)
+                   (w1 :: Test.QuickCheck.Random.QCGen)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1
+                        `cast`
+                      (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Semigroups.$w$dTestable1 w ww1 ww2 ww3 ww4 w2 }) -}
+357399e122469e9eec2ec5ec61be91f2
+  $tc'Trivial :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17286112248147243846##
+                   8274643196250804163##
+                   Semigroups.$trModule
+                   Semigroups.$tc'Trivial2
+                   0#
+                   Semigroups.$tc'Trivial1) -}
+2aafb0abda2a8d43842661a44b40fad5
+  $tc'Trivial1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+5b06c444e2616b7f8724f09d09516a6f
+  $tc'Trivial2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Semigroups.$tc'Trivial3) -}
+2dc44b63c30c0d2f0b93db6f6a63c8b1
+  $tc'Trivial3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Trivial"#) -}
+c2edf730c2c59bec42dd69ebe63961f0
+  $tcTrivial :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16658236267429393775##
+                   2041625747783617392##
+                   Semigroups.$trModule
+                   Semigroups.$tcTrivial1
+                   0#
+                   GHC.Types.krep$*) -}
+5e009cd53c583cdc19be8c2c872aec66
+  $tcTrivial1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Semigroups.$fShowTrivial3) -}
+c51c27a4f4f742e45c23516adc241a4c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Semigroups.$trModule3
+                   Semigroups.$trModule1) -}
+dcaca50d3fee6ba3c82a549e856aac1c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Semigroups.$trModule2) -}
+144d040005216288ef15312c63f51d41
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Semigroups"#) -}
+8fe56fd618d42039e5d3008c6fe9ac7c
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Semigroups.$trModule4) -}
+780903a152ee47fa7c0dda3c9a90b148
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+6f2fc8bbbac5430308b6ee69d0322af9
+  $w$dTestable ::
+    (Semigroups.Trivial -> GHC.Types.Bool)
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 6, Strictness: <L,C(U)><S,U><S,U><S,U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Semigroups.Trivial -> GHC.Types.Bool)
+                   (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Word#)
+                   (ww2 :: GHC.Prim.Word#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$wforAllShrink
+                   @ Semigroups.Trivial
+                   @ GHC.Types.Bool
+                   Semigroups.$fShowTrivial
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                        (Nth:2
+                             (Nth:3
+                                  (Nth:3
+                                       (Trans
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     GHC.Types.Bool>_R
+                                             ->_R Test.QuickCheck.Property.N:Testable[0]
+                                                      <Semigroups.Trivial -> GHC.Types.Bool>_N)
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     GHC.Types.Bool>_R
+                                             ->_R <Semigroups.Trivial -> GHC.Types.Bool>_R
+                                             ->_R Trans
+                                                      (Test.QuickCheck.Property.N:Property[0])
+                                                      (Test.QuickCheck.Gen.N:Gen[0]
+                                                           (Test.QuickCheck.Property.N:Prop[0]))))))))
+                   Semigroups.$fArbitraryTrivial1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <Semigroups.Trivial>_R))
+                   Semigroups.$fArbitraryTrivial_$cshrink
+                   w
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   w1) -}
+fa004880d2971ce9ed59b3806ad9c172
+  $w$dTestable1 ::
+    (Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool)
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Word#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 6, Strictness: <L,C(U)><S,U><S,U><S,U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Semigroups.Trivial
+                         -> Semigroups.Trivial -> GHC.Types.Bool)
+                   (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Word#)
+                   (ww2 :: GHC.Prim.Word#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$wforAllShrink
+                   @ Semigroups.Trivial
+                   @ (Semigroups.Trivial -> GHC.Types.Bool)
+                   Semigroups.$fShowTrivial
+                   Semigroups.$s$fTestable(->)3
+                     `cast`
+                   (Trans
+                        (Nth:3
+                             (Nth:3
+                                  (Nth:3
+                                       (Trans
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     GHC.Types.Bool>_R
+                                             ->_R <Semigroups.Trivial -> GHC.Types.Bool>_R
+                                             ->_R Trans
+                                                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                                                (Test.QuickCheck.Property.N:Prop[0])))
+                                                      (Sym (Test.QuickCheck.Property.N:Property[0])))
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     GHC.Types.Bool>_R
+                                             ->_R Sym (Test.QuickCheck.Property.N:Testable[0]
+                                                           <Semigroups.Trivial
+                                                            -> GHC.Types.Bool>_N))))))
+                        (Nth:2
+                             (Nth:3
+                                  (Nth:3
+                                       (Trans
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R Test.QuickCheck.Property.N:Testable[0]
+                                                      <Semigroups.Trivial
+                                                       -> Semigroups.Trivial -> GHC.Types.Bool>_N)
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R <Semigroups.Trivial
+                                                   -> Semigroups.Trivial -> GHC.Types.Bool>_R
+                                             ->_R Trans
+                                                      (Test.QuickCheck.Property.N:Property[0])
+                                                      (Test.QuickCheck.Gen.N:Gen[0]
+                                                           (Test.QuickCheck.Property.N:Prop[0]))))))))
+                   Semigroups.$fArbitraryTrivial1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <Semigroups.Trivial>_R))
+                   Semigroups.$fArbitraryTrivial_$cshrink
+                   w
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   w1) -}
+7535776497860b60c78293fbbfdce4d0
+  type TrivAssoc =
+    Semigroups.Trivial
+    -> Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool
+ad43d9782290ccb446184930ac59f5e0
+  data Trivial = Trivial
+c85df61e91f65057bf58d8fa575f8c7d
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Semigroups.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+2304a549e53a7cace1029b616e4dc67c
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.QuickCheck.Test.$wquickCheckWithResult
+                        @ Semigroups.TrivAssoc
+                        Semigroups.main3
+                          `cast`
+                        (Nth:3
+                             (Nth:3
+                                  (Nth:3
+                                       (Trans
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial
+                                                      -> Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R <Semigroups.Trivial
+                                                   -> Semigroups.Trivial
+                                                   -> Semigroups.Trivial
+                                                   -> GHC.Types.Bool>_R
+                                             ->_R Trans
+                                                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                                                (Test.QuickCheck.Property.N:Prop[0])))
+                                                      (Sym (Test.QuickCheck.Property.N:Property[0])))
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial
+                                                      -> Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R Sym (Test.QuickCheck.Property.N:Testable[0]
+                                                           <Semigroups.Trivial
+                                                            -> Semigroups.Trivial
+                                                            -> Semigroups.Trivial
+                                                            -> GHC.Types.Bool>_N))))))
+                        (GHC.Base.Nothing @ (Test.QuickCheck.Random.QCGen, GHC.Types.Int))
+                        Test.QuickCheck.Test.stdArgs2
+                        Test.QuickCheck.Test.stdArgs1
+                        Test.QuickCheck.Test.stdArgs2
+                        GHC.Types.True
+                        GHC.Base.maxInt
+                        Semigroups.main2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Tuple.() #) }) -}
+d8dcf817b5f37067ad889edd2b559a6b
+  main2 ::
+    Semigroups.Trivial
+    -> Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: (\ (a :: Semigroups.Trivial)
+                   (b :: Semigroups.Trivial)
+                   (c :: Semigroups.Trivial) ->
+                 GHC.Types.True) -}
+6aa458a20d3295244dad8c536890297b
+  main3 ::
+    (Semigroups.Trivial
+     -> Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3,
+     Strictness: <L,C(U)><S(SSSSLL),1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ (f :: Semigroups.Trivial
+                         -> Semigroups.Trivial
+                         -> Semigroups.Trivial
+                         -> GHC.Types.Bool)[OneShot]
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int)[OneShot] ->
+                 case eta
+                        `cast`
+                      (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Test.QuickCheck.Property.$wforAllShrink
+                   @ Semigroups.Trivial
+                   @ (Semigroups.Trivial -> Semigroups.Trivial -> GHC.Types.Bool)
+                   Semigroups.$fShowTrivial
+                   Semigroups.$s$fTestable(->)5
+                     `cast`
+                   (Trans
+                        (Nth:3
+                             (Nth:3
+                                  (Nth:3
+                                       (Trans
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R <Semigroups.Trivial
+                                                   -> Semigroups.Trivial -> GHC.Types.Bool>_R
+                                             ->_R Trans
+                                                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                                                (Test.QuickCheck.Property.N:Prop[0])))
+                                                      (Sym (Test.QuickCheck.Property.N:Property[0])))
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R Sym (Test.QuickCheck.Property.N:Testable[0]
+                                                           <Semigroups.Trivial
+                                                            -> Semigroups.Trivial
+                                                            -> GHC.Types.Bool>_N))))))
+                        (Nth:2
+                             (Nth:3
+                                  (Nth:3
+                                       (Trans
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial
+                                                      -> Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R Test.QuickCheck.Property.N:Testable[0]
+                                                      <Semigroups.Trivial
+                                                       -> Semigroups.Trivial
+                                                       -> Semigroups.Trivial
+                                                       -> GHC.Types.Bool>_N)
+                                            (<Test.QuickCheck.Arbitrary.Arbitrary
+                                                Semigroups.Trivial>_R
+                                             ->_R <GHC.Show.Show Semigroups.Trivial>_R
+                                             ->_R <Test.QuickCheck.Property.Testable
+                                                     (Semigroups.Trivial
+                                                      -> Semigroups.Trivial -> GHC.Types.Bool)>_R
+                                             ->_R <Semigroups.Trivial
+                                                   -> Semigroups.Trivial
+                                                   -> Semigroups.Trivial
+                                                   -> GHC.Types.Bool>_R
+                                             ->_R Trans
+                                                      (Test.QuickCheck.Property.N:Property[0])
+                                                      (Test.QuickCheck.Gen.N:Gen[0]
+                                                           (Test.QuickCheck.Property.N:Prop[0]))))))))
+                   Semigroups.$fArbitraryTrivial1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <Semigroups.Trivial>_R))
+                   Semigroups.$fArbitraryTrivial_$cshrink
+                   f
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   eta1 }) -}
+670ae0da44f4fe154f1958e07a4aa6b2
+  semigroupAssoc ::
+    (GHC.Classes.Eq m, Data.Semigroup.Semigroup m) =>
+    m -> m -> m -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A,A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ m
+                   ($dEq :: GHC.Classes.Eq m)
+                   ($dSemigroup :: Data.Semigroup.Semigroup m)
+                   (a :: m)
+                   (b :: m)
+                   (c :: m) ->
+                 GHC.Classes.==
+                   @ m
+                   $dEq
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      a
+                      (Data.Semigroup.<> @ m $dSemigroup b c))
+                   (Data.Semigroup.<>
+                      @ m
+                      $dSemigroup
+                      (Data.Semigroup.<> @ m $dSemigroup a b)
+                      c)) -}
+instance [safe] Test.QuickCheck.Arbitrary.Arbitrary [Semigroups.Trivial]
+  = Semigroups.$fArbitraryTrivial
+instance [safe] GHC.Classes.Eq [Semigroups.Trivial]
+  = Semigroups.$fEqTrivial
+instance [safe] Data.Semigroup.Semigroup [Semigroups.Trivial]
+  = Semigroups.$fSemigroupTrivial
+instance [safe] GHC.Show.Show [Semigroups.Trivial]
+  = Semigroups.$fShowTrivial
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

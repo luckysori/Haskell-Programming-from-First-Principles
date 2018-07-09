@@ -1,0 +1,17 @@
+
+c:/Projects/Haskell/First-principles/IN-PROGRESS ch17/tryingCheckers/src\Main.hs,327
+module Main Main0,1
+data BullBull7,8
+  = FoolsFools8,9
+  | TwooTwoo9,10
+instance Arbitrary Arbitrary Bull12,13
+  arbitrary arbitrary13,14
+instance Monoid Monoid Bull16,17
+  mempty mempty17,18
+  mappend mappend18,19
+instance EqProp EqProp Bull20,21
+instance EqProp Bull where (=(=-=)20,21
+main main22,23
+
+c:/Projects/Haskell/First-principles/IN-PROGRESS ch17/tryingCheckers/Setup.hs,15
+main main1,2

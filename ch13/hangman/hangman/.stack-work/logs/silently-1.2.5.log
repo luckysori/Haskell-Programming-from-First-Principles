@@ -1,0 +1,6 @@
+Configuring silently-1.2.5...
+Preprocessing library for silently-1.2.5..
+Building library for silently-1.2.5..
+[1 of 1] Compiling System.IO.Silently ( src\System\IO\Silently.hs, .stack-work\dist\5c8418a7\build\System\IO\Silently.o )
+Installing library in C:\sr\snapshots\7aa263e3\lib\x86_64-windows-ghc-8.2.2\silently-1.2.5-A7WEXUoXcTh1TcbS3dokt3
+Registering library for silently-1.2.5..
