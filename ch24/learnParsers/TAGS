@@ -1,0 +1,19 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch24/learnParsers/src\Main.hs,303
+module Main Main0,1
+stop stop4,5
+one one7,8
+one' one'10,11
+oneTwo oneTwo12,13
+oneTwo' oneTwo'15,16
+oneEof oneEof17,18
+oneTwoEof oneTwoEof19,20
+comboParser comboParser21,22
+string' string'24,25
+myParseFunc myParseFunc28,29
+testParse testParse31,32
+pNL pNL35,36
+main main38,39
+
+c:/Projects/Haskell/haskellbook-solutions/ch24/learnParsers/Setup.hs,15
+main main1,2

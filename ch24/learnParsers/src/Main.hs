@@ -1,6 +1,6 @@
 module Main where
 
-import Text.Trifecta
+import           Text.Trifecta
 
 stop :: Parser a
 stop = unexpected "stop"
@@ -15,7 +15,7 @@ oneTwo = char '1' >> char '2'
 
 oneTwo' = oneTwo >> stop
 
-oneEof = one >> eof 
+oneEof = one >> eof
 
 oneTwoEof = oneTwo >> eof
 
@@ -23,8 +23,11 @@ comboParser = choice [string "123", string "12", string "1", stop]
 
 -- unlike string, after failing to parse a String the cursor is found before the character which caused the error
 string' :: String -> Parser String
-string' [] = return []
+string' []         = return []
 string' xss@(x:xs) = char x >> string' xs >> return xss
+
+myParseFunc :: Parser Integer
+myParseFunc = integer >>= \n -> eof >> return n
 
 testParse :: Parser Char -> IO ()
 testParse p =
@@ -32,7 +35,7 @@ testParse p =
 
 pNL s =
   putStrLn ('\n' : s)
-  
+
 main :: IO ()
 main = do
   pNL "stop:"

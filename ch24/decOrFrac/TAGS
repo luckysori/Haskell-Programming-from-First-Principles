@@ -1,0 +1,16 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch24/decOrFrac/src\Main.hs,330
+module Main Main0,1
+badFraction badFraction7,8
+alsoBad alsoBad8,9
+shouldWork shouldWork9,10
+shouldAlsoWork shouldAlsoWork10,11
+parseFraction parseFraction12,13
+parseDecimal parseDecimal21,22
+parseDecimal' parseDecimal'33,34
+type FractionOrDecimal FractionOrDecimal41,42
+parseRod parseRod43,44
+main main46,47
+
+c:/Projects/Haskell/haskellbook-solutions/ch24/decOrFrac/Setup.hs,15
+main main1,2
