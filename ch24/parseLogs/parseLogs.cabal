@@ -21,3 +21,5 @@ executable parseLogs
                      , trifecta
                      , time
                      , parsec
+                     , raw-strings-qq
+                     , MissingH

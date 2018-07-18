@@ -1,0 +1,42 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch24/parseLogs/src\Main.hs,1126
+module Main Main2,3
+type Name Name10,11
+type When When11,12
+newtype Duration Duration12,13
+diff diff14,15
+data ActivityWhen ActivityWhen27,28
+data ActivityWhen = ActivityWhenActivityWhen27,28
+                { name name28,29
+                , time time29,30
+instance Show Show ActivityWhen33,34
+  show show34,35
+data ActivityDuration ActivityDuration40,41
+  ActivityDuration ActivityDuration41,42
+instance Show Show ActivityDuration43,44
+  show show44,45
+data OneDay OneDay50,51
+  OneDay OneDay51,52
+instance Show Show OneDay53,54
+  show show54,55
+data OneDayDuration OneDayDuration59,60
+  OneDayDuration OneDayDuration60,61
+data WhenLog WhenLog61,62
+  WhenLog WhenLog62,63
+instance Show Show WhenLog64,65
+  show show65,66
+data TimeLog TimeLog68,69
+  TimeLog TimeLog69,70
+aLog aLog71,72
+anotherLog anotherLog101,102
+parseComment parseComment135,136
+parseDate parseDate144,145
+parseTime parseTime154,155
+parseActivity parseActivity166,167
+parseOneDay parseOneDay173,174
+parseWhenLog parseWhenLog184,185
+parseTimeLog parseTimeLog187,188
+main main203,204
+
+c:/Projects/Haskell/haskellbook-solutions/ch24/parseLogs/Setup.hs,15
+main main1,2
