@@ -8,11 +8,13 @@ packages:
 extra-deps:
 - HUnit-1.6.0.0
 - MissingH-1.4.0.1
+- QuickCheck-2.11.3
 - StateVar-1.1.1.0
 - adjunctions-4.4
 - ansi-terminal-0.8.0.4
 - ansi-wl-pprint-0.6.8.2
 - attoparsec-0.13.2.2
+- base-compat-0.10.4
 - base-orphans-0.8
 - bifunctors-5.5.3
 - blaze-builder-0.4.1.0
@@ -20,6 +22,7 @@ extra-deps:
 - blaze-markup-0.8.2.1
 - cabal-doctest-1.0.6
 - call-stack-0.1.0
+- case-insensitive-1.2.0.11
 - charset-0.3.7.1
 - colour-2.3.4
 - comonad-5.0.4
@@ -44,6 +47,7 @@ extra-deps:
 - parsers-0.12.9
 - primitive-0.6.4.0
 - profunctors-5.3
+- quickcheck-instances-0.3.18
 - random-1.1
 - raw-strings-qq-1.1
 - reducers-3.12.3
@@ -57,12 +61,14 @@ extra-deps:
 - stm-2.4.5.0
 - tagged-0.8.6
 - text-1.2.3.0
+- tf-random-0.5
 - th-abstraction-0.2.8.0
 - transformers-base-0.4.5.2
 - transformers-compat-0.6.2
 - trifecta-2
 - unordered-containers-0.2.9.0
 - utf8-string-1.0.1.1
+- uuid-types-1.0.3
 - vector-0.12.0.1
 - void-0.7.2
 resolver: ghc-8.0.2

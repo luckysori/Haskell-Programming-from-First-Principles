@@ -23,3 +23,6 @@ executable parseLogs
                      , parsec
                      , raw-strings-qq
                      , MissingH
+                     , containers
+                     , QuickCheck
+                     , quickcheck-instances
