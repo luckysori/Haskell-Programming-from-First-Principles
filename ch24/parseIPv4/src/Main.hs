@@ -2,8 +2,35 @@ module Main where
 
 import Data.Word
 import Text.Trifecta
+import Numeric (showIntAtBase)
+import Data.List.Split (chunksOf)
+import Data.List (intersperse)
 
-data IPAddress = IPAddress Word32 deriving (Eq, Ord, Show)
+data IPAddress = IPAddress Word32 deriving (Eq, Ord)
+
+toBin :: (Show a, Integral a) => a -> String
+toBin x = showIntAtBase 2 (\n -> ['0'..'1']!!n) x ""
+
+toDec' :: (Read a, Num a) => String -> a
+toDec' [] = 0
+toDec' (x:xs) = (read [x]) * (2 ^ (length xs)) + toDec' xs
+
+appendZeros :: String -> String
+appendZeros x
+  | l < 32 = take (32 - l) (repeat '0') ++ x
+  | otherwise = x
+  where l = length x
+
+instance Show IPAddress where
+  show (IPAddress x) =
+    (concat .
+     (intersperse ".") .
+     (fmap show) .
+     (fmap toDec') .
+     (chunksOf 8) .
+     appendZeros .
+     toBin)
+    x
 
 parseWord8 :: Parser Word8
 parseWord8 = do
@@ -11,10 +38,9 @@ parseWord8 = do
   if n >= 0 && n < 256
     then return (fromIntegral n)
     else fail "number of out range 0-255"
-    
+
 toBinary :: Word8 -> String
-toBinary 0 = show 0
-toBinary n = toBinary (n `quot` 2) ++ (show $ n `rem` 2)
+toBinary = toBin
 
 lstripZeros :: String -> String
 lstripZeros [] = []
@@ -29,8 +55,7 @@ to8bits s
   where lengthS = length s
 
 toDec :: String -> Word32
-toDec [] = 0
-toDec (x:xs) = (read [x]) * (2 ^ (length xs)) + toDec xs
+toDec = toDec'
 
 parseIPAddress :: Parser IPAddress
 parseIPAddress = do
@@ -39,9 +64,14 @@ parseIPAddress = do
     4 -> return $ IPAddress ((toDec . concat . (fmap to8bits) . (fmap toBinary)) ns)
     _ -> fail "incorrect format for IPv4"
 
+ipv4ToInt :: IPAddress -> Word32
+ipv4ToInt (IPAddress x) = x
+
 main :: IO ()
 main = do
   putStrLn "The IPv4 address 172.16.254.1 has decimal representation:"
-  print $ parseString parseIPAddress mempty "172.16.254.1"
+  print $ parseString parseIPAddress mempty "172.16.254.1" >>=
+    \x -> return $ ipv4ToInt x
   putStrLn "The IPv4 address 204.120.0.15 has decimal representation:"
-  print $ parseString parseIPAddress mempty "204.120.0.15"
+  print $ parseString parseIPAddress mempty "204.120.0.15" >>=
+    \x -> return $ ipv4ToInt x
