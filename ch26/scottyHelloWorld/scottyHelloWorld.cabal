@@ -1,0 +1,22 @@
+name:                scottyHelloWorld
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/luckysori/scottyHelloWorld#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Lucas Soriano del Pino
+maintainer:          l.soriano.del.pino@gmail.com
+copyright:           Copyright (c) 2018 Lucas Soriano del Pino
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable scottyHelloWorld
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , scotty
+                     , transformers
