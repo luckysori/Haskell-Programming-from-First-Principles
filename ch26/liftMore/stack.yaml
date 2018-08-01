@@ -1,0 +1,26 @@
+flags:
+  transformers-compat:
+    five: true
+packages:
+- .
+extra-deps:
+- StateVar-1.1.1.0
+- base-orphans-0.8
+- bifunctors-5.5.3
+- cabal-doctest-1.0.6
+- comonad-5.0.4
+- contravariant-1.5
+- distributive-0.6
+- either-5.0.1
+- hashable-1.2.7.0
+- mtl-2.2.2
+- profunctors-5.3
+- semigroupoids-5.3.1
+- semigroups-0.18.5
+- stm-2.4.5.0
+- tagged-0.8.6
+- text-1.2.3.0
+- th-abstraction-0.2.8.0
+- transformers-compat-0.6.2
+- unordered-containers-0.2.9.0
+resolver: ghc-8.0.2

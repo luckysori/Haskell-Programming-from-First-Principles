@@ -1,0 +1,15 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/liftMore/src\Main.hs,308
+module Main Main0,1
+newtype EitherT EitherT5,6
+  EitherT { runEitherT runEitherT6,7
+instance MonadTrans MonadTrans (EitherT e)8,9
+  lift lift9,10
+newtype StateT StateT12,13
+  StateT { runStateT runStateT13,14
+instance MonadTrans MonadTrans (StateT s)15,16
+  lift lift16,17
+main main18,19
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/liftMore/Setup.hs,15
+main main1,2

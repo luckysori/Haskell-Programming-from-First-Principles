@@ -1,0 +1,64 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/wrapItUp.hs,23
+embedded embedded4,5
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/stateT.hs,328
+newtype StateT StateT2,3
+  StateT { runStateT runStateT3,4
+instance Functor Functor m => Functor (StateT s m)5,6
+  fmap fmap6,7
+instance Monad Monad m => Applicative (StateT s m)9,10
+  pure pure10,11
+  (<(<*>)12,13
+instance Monad Monad m => Monad (StateT s m)18,19
+  return return19,20
+  (S(StateTsmas)20,21
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/scottyHelloWorld\src\Main.hs,38
+module Main Main2,3
+main main9,10
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/scottyHelloWorld\Setup.hs,15
+main main1,2
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/readerT.hs,349
+newtype ReaderT ReaderT0,1
+  ReaderT { runReaderT runReaderT1,2
+instance Functor Functor m => Functor (ReaderT r m)3,4
+  fmap fmap4,5
+instance Applicative Applicative m => Applicative (ReaderT r m)6,7
+  pure pure7,8
+  (R(ReaderTf)9,10
+instance Monad Monad m => Monad (ReaderT r m)11,12
+  return return12,13
+  (R(ReaderTrma)13,14
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/liftMore\src\Main.hs,308
+module Main Main0,1
+newtype EitherT EitherT5,6
+  EitherT { runEitherT runEitherT6,7
+instance MonadTrans MonadTrans (EitherT e)8,9
+  lift lift9,10
+newtype StateT StateT12,13
+  StateT { runStateT runStateT13,14
+instance MonadTrans MonadTrans (StateT s)15,16
+  lift lift16,17
+main main18,19
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/liftMore\Setup.hs,15
+main main1,2
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/eitherT.hs,423
+newtype EitherT EitherT0,1
+  EitherT { runEitherT runEitherT1,2
+instance Functor Functor m => Functor (EitherT e m)3,4
+  fmap fmap4,5
+instance Applicative Applicative m => Applicative (EitherT e m)6,7
+  pure pure7,8
+  f f9,10
+instance Monad Monad m => Monad (EitherT e m)11,12
+  return return12,13
+  (E(EitherTmea)14,15
+swapEither swapEither21,22
+swapEitherT swapEitherT25,26
+eitherT eitherT30,31
