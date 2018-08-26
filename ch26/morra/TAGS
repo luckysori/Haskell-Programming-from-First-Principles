@@ -1,0 +1,24 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/morra/src\Main.hs,551
+module Main Main0,1
+data Player Player8,9
+data Player = P1 P18,9
+data Player = P1 | P2P28,9
+instance Show Show Player10,11
+  show show11,12
+data PlayerType PlayerType14,15
+data PlayerType = Human Human14,15
+data PlayerType = Human | CPUCPU14,15
+type Mode Mode15,16
+data GameState GameState17,18
+data GameState = GameStateGameState17,18
+              { mode mode18,19
+              , score score19,20
+checkWinner checkWinner21,22
+getNumber getNumber25,26
+morra morra40,41
+readConfig readConfig51,52
+main main56,57
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/morra/Setup.hs,15
+main main1,2

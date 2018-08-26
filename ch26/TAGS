@@ -2,12 +2,25 @@
 c:/Projects/Haskell/haskellbook-solutions/ch26/wrapItUp.hs,23
 embedded embedded4,5
 
+c:/Projects/Haskell/haskellbook-solutions/ch26/sPrintIncAccum.hs,35
+sPrintIncAccum sPrintIncAccum2,3
+
 c:/Projects/Haskell/haskellbook-solutions/ch26/scottyHelloWorld\src\Main.hs,37
 module Main Main2,3
 main main8,9
 
 c:/Projects/Haskell/haskellbook-solutions/ch26/scottyHelloWorld\Setup.hs,15
 main main1,2
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/rShow.hs,17
+rShow rShow2,3
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/rPrintAndInc.hs,31
+rPrintAndInc rPrintAndInc2,3
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/rDec.hs,32
+rDec rDec2,3
+rDec' rDec'5,6
 
 c:/Projects/Haskell/haskellbook-solutions/ch26/MyStateT.hs,359
 module MyStateT MyStateT2,3
@@ -53,26 +66,6 @@ instance (M(MonadIO m) => MonadIO (ReaderT r m)27,28
 instance (M(MonadIO m) => MonadIO (StateT s m)30,31
   liftIO liftIO31,32
 
-c:/Projects/Haskell/haskellbook-solutions/ch26/monadIoInstances\src\Main.hs,461
-module Main Main0,1
-data MaybeT MaybeT5,6
-  MaybeT MaybeT6,7
-  MaybeT { runMaybeT runMaybeT6,7
-instance Functor Functor m => Functor (MaybeT m)8,9
-  fmap fmap9,10
-instance Applicative Applicative m => Applicative (MaybeT m)11,12
-  pure pure12,13
-  (<(<*>)13,14
-instance Monad Monad m => Monad (MaybeT m)16,17
-  return return17,18
-  (>(>>=)18,19
-instance (M(MonadIO m) => MonadIO (MaybeT m)24,25
-  liftIO liftIO25,26
-main main27,28
-
-c:/Projects/Haskell/haskellbook-solutions/ch26/monadIoInstances\Setup.hs,15
-main main1,2
-
 c:/Projects/Haskell/haskellbook-solutions/ch26/liftMore\src\Main.hs,308
 module Main Main0,1
 newtype EitherT EitherT5,6
@@ -87,6 +80,20 @@ main main18,19
 
 c:/Projects/Haskell/haskellbook-solutions/ch26/liftMore\Setup.hs,15
 main main1,2
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/hypoEx.hs,211
+newtype ReaderT ReaderT0,1
+  ReaderT { runReaderT runReaderT1,2
+newtype MaybeT MaybeT3,4
+  MaybeT { runMaybeT runMaybeT4,5
+readerTMaybe readerTMaybe6,7
+maybeTReader maybeTReader9,10
+main main12,13
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/fixTheCode.hs,75
+isValid isValid4,5
+maybeExcite maybeExcite7,8
+doExcite doExcite13,14
 
 c:/Projects/Haskell/haskellbook-solutions/ch26/eitherT.hs,423
 newtype EitherT EitherT0,1

@@ -1,0 +1,15 @@
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/hitCounter/src\Main.hs,234
+module Main Main2,3
+data Config Config15,16
+  Config Config16,17
+    counts counts17,18
+  , prefix prefix18,19
+type Scotty Scotty21,22
+type Handler Handler23,24
+bumpBoomp bumpBoomp26,27
+app app36,37
+main main52,53
+
+c:/Projects/Haskell/haskellbook-solutions/ch26/hitCounter/Setup.hs,15
+main main1,2

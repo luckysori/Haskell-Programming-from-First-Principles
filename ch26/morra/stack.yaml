@@ -1,0 +1,11 @@
+flags:
+  mintty:
+    win32-2-5-3: false
+packages:
+- .
+extra-deps:
+- ansi-terminal-0.8.0.4
+- colour-2.3.4
+- mintty-0.1.2
+- random-1.1
+resolver: ghc-8.0.2
